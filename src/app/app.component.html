@@ -346,10 +346,15 @@
 
 
   </div>
-
+  <br>
+  <h3>Demonstration of 1-way data-binding</h3>
   <button (click)="btnClicked()">I've been clicked - {{ counter }} times</button>
   <br>
+  <h3>Demonstration of markup imbedded function</h3>
   <button (click)="name='Fran'">Change name</button>
+  <br>
+  <h3>Demonstration of 2-way data-binding</h3>
+  <input type="text" style="text-align: center;" [(ngModel)]="name">
 
   <!-- Resources -->
   <h2>Resources</h2>
