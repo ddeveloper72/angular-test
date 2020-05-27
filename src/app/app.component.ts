@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-intro';
   name = 'Duncan';
-  today  = new Date();
+  today = new Date();
+
+  btnClicked = function() {
+    console.log('button has been clicked');
+  };
 }
