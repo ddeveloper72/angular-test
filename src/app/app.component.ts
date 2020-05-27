@@ -10,7 +10,7 @@ export class AppComponent {
   name = 'Duncan';
   today = new Date();
 
-  btnClicked = function() {
-    console.log('button has been clicked');
-  };
+  btnClicked = evt => {
+    console.log(evt);
+  }
 }
