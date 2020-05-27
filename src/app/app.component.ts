@@ -9,8 +9,9 @@ export class AppComponent {
   title = 'angular-intro';
   name = 'Duncan';
   today = new Date();
+  counter = 0;
 
-  btnClicked = evt => {
-    console.log(evt);
-  }
+  btnClicked = () => {
+    this.counter++;
+  };
 }
