@@ -16,12 +16,14 @@ export class AppComponent implements OnInit {
     { name: 'Sam', age: 28 }
   ];
 
+  customColor = 'grey';
+
   ngOnInit() {
     this.counter = 2;
   }
 
-
   btnClicked = () => {
     this.counter++;
+    this.customColor = 'gold';
   };
 }
