@@ -6,16 +6,15 @@ import { PeopleService } from './people.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit  {
   title = 'angular-intro';
   name = 'Duncan';
   today = new Date();
   counter = 0;
   people = [];
+  customColor = 'grey';
 
   constructor(private peopleService: PeopleService) {}
-
-  customColor = 'grey';
 
   ngOnInit() {
     this.counter = 2;
@@ -23,7 +22,7 @@ export class AppComponent implements OnInit {
   }
 
   btnClicked = () => {
-    this.counter++;
+    this.counter ++;
     this.customColor = 'gold';
   };
 }
