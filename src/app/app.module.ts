@@ -4,14 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { PeopleService } from './people.service';
+import { AppRoutingModule } from './app-routing.module';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     PeopleService
