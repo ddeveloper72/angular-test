@@ -17,8 +17,9 @@ export class AppComponent implements OnInit {
   ];
 
   ngOnInit() {
-    console.log('component initiated');
+    this.counter = 2;
   }
+
 
   btnClicked = () => {
     this.counter++;
