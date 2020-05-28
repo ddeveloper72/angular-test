@@ -10,8 +10,14 @@ export class AppComponent {
   name = 'Duncan';
   today = new Date();
   counter = 0;
+  people = [
+    {name: 'Duncan', age: 24},
+    {name: 'You', age: 35},
+    {name: 'Sam', age: 28}
+  ];
 
   btnClicked = () => {
     this.counter++;
-  };
+  }
+
 }
