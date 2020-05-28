@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeopleService } from './people.service';
 
 @Component({
   selector: 'app-root',
@@ -10,16 +11,15 @@ export class AppComponent implements OnInit {
   name = 'Duncan';
   today = new Date();
   counter = 0;
-  people = [
-    { name: 'Duncan', age: 24 },
-    { name: 'You', age: 35 },
-    { name: 'Sam', age: 28 }
-  ];
+  people = [];
+
+  constructor(private peopleService: PeopleService) {}
 
   customColor = 'grey';
 
   ngOnInit() {
     this.counter = 2;
+    this.people = this.peopleService.allPeople();
   }
 
   btnClicked = () => {
