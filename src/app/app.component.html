@@ -358,11 +358,8 @@
   <input type="text" style="text-align: center;" [(ngModel)]="name">
   <br>
   <div *ngFor="let person of people">
-    <h3 *ngIf="person.name=='You'">
+    <h3 [ngClass]="{'red': person.age > 30}">
       {{ person.name }} are {{ person.age}}
-    </h3>
-    <h3 *ngIf="person.name!='You'">
-      {{ person.name }} is {{ person.age }}
     </h3>
   </div>
 
