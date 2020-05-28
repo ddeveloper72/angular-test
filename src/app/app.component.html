@@ -346,7 +346,7 @@
 
 
   </div>
-  <br>
+  <!-- <br>
   <h3>Demonstration of 1-way data-binding</h3>
   <button (click)="btnClicked()">I've been clicked - {{ counter }} times</button>
   <p *ngIf="counter > 3" [ngStyle]="{'background-color': customColor}">You're a great clicker ✔✔✔</p>
@@ -361,8 +361,10 @@
     <h3 [ngClass]="{'red': person.age > 30}">
       {{ person.name }} are {{ person.age}}
     </h3>
-  </div>
+  </div> -->
 
+  <router-outlet></router-outlet>
+  
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
