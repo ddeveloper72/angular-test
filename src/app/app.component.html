@@ -346,25 +346,31 @@
 
 
   </div>
-  <!-- <br>
-  <h3>Demonstration of 1-way data-binding</h3>
-  <button (click)="btnClicked()">I've been clicked - {{ counter }} times</button>
-  <p *ngIf="counter > 3" [ngStyle]="{'background-color': customColor}">You're a great clicker ✔✔✔</p>
-  <br>
-  <h3>Demonstration of markup imbedded function</h3>
-  <button (click)="name='Fran'">Change name</button>
-  <br>
-  <h3>Demonstration of 2-way data-binding</h3>
-  <input type="text" style="text-align: center;" [(ngModel)]="name">
-  <br>
-  <div *ngFor="let person of people">
-    <h3 [ngClass]="{'red': person.age > 30}">
-      {{ person.name }} are {{ person.age}}
-    </h3>
-  </div> -->
+  
+  <nav>
+    <a routerLink="first">First</a><br>
+    <a routerLink="second">Second</a>
+  </nav>
 
   <router-outlet></router-outlet>
-  
+
+  <br>
+    <h3>Demonstration of 1-way data-binding</h3>
+    <button (click)="btnClicked()">I've been clicked - {{ counter }} times</button>
+    <p *ngIf="counter > 3" [ngStyle]="{'background-color': customColor}">You're a great clicker ✔✔✔</p>
+    <br>
+    <h3>Demonstration of markup imbedded function</h3>
+    <button (click)="name='Fran'">Change name</button>
+    <br>
+    <h3>Demonstration of 2-way data-binding</h3>
+    <input type="text" style="text-align: center;" [(ngModel)]="name">
+    <br>
+    <div *ngFor="let person of people">
+      <h3 [ngClass]="{'red': person.age > 30}">
+        {{ person.name }} are {{ person.age}}
+      </h3>
+  </div>
+
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
