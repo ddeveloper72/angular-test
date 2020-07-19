@@ -24,5 +24,5 @@ export class AppComponent implements OnInit  {
   btnClicked = () => {
     this.counter ++;
     this.customColor = 'gold';
-  };
+  }
 }
