@@ -1,1 +1,6 @@
-<p>first works!</p>
+<form [formGroup]="usernameForm">
+  <label for="">Name</label>
+  <input type="text" formControlName="name"/><br>
+  <label for="">Last Name </label>
+  <input type="text" formControlName="surname"/><br>
+</form>
