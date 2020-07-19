@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
   templateUrl: './second.component.html',
   styleUrls: ['./second.component.css']
 })
-export class SecondComponent implements OnInit, btnClicked {
+export class SecondComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location) {}
 
   ngOnInit(): void {
@@ -18,5 +18,5 @@ export class SecondComponent implements OnInit, btnClicked {
   btnClicked = () => {
     // bring user from this location back to previous location
     this.location.back();
-  };
+  }
 }
