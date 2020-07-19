@@ -7,15 +7,16 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
-
   usernameForm = new FormGroup({
-    name : new FormControl(''),
+    name: new FormControl(''),
     surname: new FormControl('')
   });
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  sendForm = () => {
+    console.log(this.usernameForm.value);
   }
-
 }
