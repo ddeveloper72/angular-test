@@ -8,6 +8,9 @@ import { Location } from '@angular/common';
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {
+
+  SomeonesName = 'Bob';
+
   constructor(private route: ActivatedRoute, private location: Location) {}
 
   ngOnInit(): void {
@@ -18,5 +21,5 @@ export class SecondComponent implements OnInit {
   btnClicked = () => {
     // bring user from this location back to previous location
     this.location.back();
-  }
+  };
 }
