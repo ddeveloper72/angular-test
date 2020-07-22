@@ -4,4 +4,4 @@
 <button (click)="btnClicked()">Click me</button>
 
 <!-- variable called "name" imported into child component from second component-->
-<app-child [name]="SomeonesName"></app-child>
+<app-child [name]="SomeonesName" (changed)="childChanged($event)"></app-child>
