@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 export class PeopleService {
 
 newObservable$ = new Observable( observer => {
-  observer.next();
+  observer.next('❤ we have 🚀');
 });
 
   people = [
