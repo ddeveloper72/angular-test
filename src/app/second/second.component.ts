@@ -9,6 +9,7 @@ import { Location } from '@angular/common';
 })
 export class SecondComponent implements OnInit {
   SomeonesName = 'Bob';
+  ChangedName = '';
 
   constructor(private route: ActivatedRoute, private location: Location) {}
 
@@ -22,7 +23,7 @@ export class SecondComponent implements OnInit {
     this.location.back();
   }
 
-  childChanged = (evt) => {
-    console.log(evt);
+  childChanged = (evt: string) => {
+   this.ChangedName = evt;
   }
 }
