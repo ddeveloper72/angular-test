@@ -22,10 +22,10 @@ export class AppComponent implements OnInit  {
 
     this.peopleService.newObservable$.subscribe(
       data => {
-
+        console.log('Observable data goes here: ', data);
       },
       error => {
-        console.log('error');
+        console.log('❌ error');
       }
     );
   }
